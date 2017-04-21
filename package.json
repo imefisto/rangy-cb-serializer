@@ -1,0 +1,26 @@
+{
+  "name": "rangy-cb-serializer",
+  "version": "0.0.1",
+  "description": "Rangy True Cross-browser Serializer",
+  "main": "rangy-cb-serializer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imefisto/rangy-cb-serializer.git"
+  },
+  "keywords": [
+    "rangy",
+    "serializer"
+  ],
+  "author": "Jeff Baker (http://www.seabreezecomputers.com/tips/rangy-serializer.htm)",
+  "contributors": [
+    "Ignacio El Kadre"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imefisto/rangy-cb-serializer/issues"
+  },
+  "homepage": "https://github.com/imefisto/rangy-cb-serializer#readme"
+}
