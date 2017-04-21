@@ -31,7 +31,7 @@
    incompatible elements) starting and ending in the first text node in the element (or text node 0).
    */
 
-  function cb_deserializeRange(serialized, rootNode)
+  function cb_deserializeRange(serialized, rootNode, range)
   {
     /* cross browser deserializeRange function */
 
@@ -40,10 +40,16 @@
 
     /* serialized is start, end, startNode, endNode */
     var serial_parts = serialized.split(","); // split serialized parts by ,
-    var range_to_return = rangy.createRange();
+    var range_to_return;
     var compatible_elements = 0; // Num of compatible elements with all browsers
     var startNode, endNode;
     var the_tags = "";
+
+    if(range) {
+      range_to_return = range;
+    } else if(rangy) {
+      range_to_return = rangy.createRange();
+    }
 
     var all_elements = rootNode.getElementsByTagName("*");
 
